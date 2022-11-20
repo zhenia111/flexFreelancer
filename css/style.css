@@ -1,0 +1,285 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    /*?????????????*/
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.content {
+    flex: 1 1 auto;
+}
+
+.hi {
+    background-color: #445162;
+    padding: 50px 0;
+}
+
+.hi__row {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.hi__body {
+    color: #fff;
+    padding: 0 30px 0 0;
+}
+
+.hi__title {
+
+    font-size: 60px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+    margin: 0 0 38px 0;
+}
+
+.hi__list {}
+
+.hi__list li {
+    margin: 0 0 15px 0;
+    padding: 0 0 0 36px;
+    background: url(../img/check\ icon.png) 0 1px no-repeat;
+    font-size: 20px;
+    line-height: 22px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+}
+
+.hi__list li:last-child {
+    margin: 0;
+}
+
+.hi__image {}
+
+.footer {
+    background-color: #f5f5f5;
+
+
+}
+
+.footer__row {
+    display: flex;
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__text {
+    color: #445162;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+
+}
+
+/* what */
+.what {
+    background-color: #fff;
+}
+
+.what__row {
+    display: flex;
+    padding: 50px 0;
+}
+
+.what__img {
+    flex: 0 0 430px;
+}
+
+.what__img img {
+    max-width: 100%;
+}
+
+.what__body {
+    flex: 1 1 auto;
+    padding: 0 0 0 38px;
+}
+
+.what__title {
+    margin: 0 0 33px 0;
+}
+
+.title {
+    font-size: 30px;
+
+    color: #445161;
+    line-height: 36px;
+}
+
+.what__text {}
+
+.what__text p {
+    color: #333333;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 25px 0;
+}
+
+/* columns */
+
+
+.columns {
+    background-color: #f5f5f5;
+    padding: 50px 0 20px 0;
+}
+
+.columns__title {
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.columns__row {
+    display: flex;
+    flex-wrap: wrap;
+    /* раздвигаем отрицательным маржином  */
+    margin: 0 -8px;
+    /*!!!!!!!!!!!!!!!!!!!*/
+}
+
+.columns__column {
+    /* а колонки сдвигаем паддиингом на тотже размер */
+    padding: 0 8px;
+    flex: 0 1 50%;
+    margin: 0 0 30px 0;
+}
+
+.columns__item {}
+
+.item {}
+
+.item__row {
+    display: flex;
+}
+
+.item__img {
+    flex: 0 0 200px;
+}
+
+.item__body {
+    flex: 1 1 auto;
+    padding: 0 0 0 15px;
+}
+
+.item__title {
+    color: #445161;
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0 0 13px 0;
+}
+
+.item__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+}
+
+/* vertical */
+.vertical {
+    padding: 50px 0;
+}
+
+.vertical__title {
+    text-align: center;
+    margin: 0 0 30px 0;
+
+}
+
+.vertical__body {
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+.vertical__row {
+    margin: 0 -22.5px;
+    display: flex;
+
+}
+
+.vertical__column {
+    padding: 0 22.5px;
+    flex: 0 1 33.333%;
+    /* для того чтобы сделать колонки одинаковой высоты */
+    display: flex;/*!!!!!!!!!!*/
+}
+
+/* 
+.vertical__column_1{
+    order: 2;
+    align-self: center;
+}
+.vertical__column_2{
+    order:1;
+}
+.vertical__column_3{
+    order:3;
+    align-self: end;
+} */
+
+
+
+
+
+
+.vertical__item {
+    background-color: #445162;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #445162;
+    padding: 0 0 20px 0;
+
+/*это тоже для того чтоб одинаковые колонки сделать */
+    display: flex;
+    flex-direction: column;/*!!!!!!!!!!*/
+}
+
+.vertical__subtitle {
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 12px 0;
+}
+
+.vertical__label {
+    padding: 15px 0;
+    background-color: #fff;
+    color: #445162;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+.vertical__text {
+    padding: 20px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    flex:1 1 auto;
+}
+
+.vertical__text p {
+    margin: 0 0 15px 0;
+}
+
+.vertical__text p:last-child {
+    margin: 0;
+}
+
+.vertical__btn {
+    display: block;
+    background-color: #fff;
+    margin: 0px 20px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
